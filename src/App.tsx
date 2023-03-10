@@ -7,9 +7,10 @@ import {
     Redirect
 } from 'react-router-dom';
 import styled from 'styled-components';
-import Nav from './components/Nav';
-import Layout from './components/Layout';
-
+import Tags from './view/Tags';
+import Money from './view/Money';
+import Statistics from './view/Statistics';
+import NoMatch from './view/NoMatch';
 const Wrapper = styled.div`
   height: 100vh;
   display: flex;
@@ -47,34 +48,11 @@ function App() {
     );
 }
 
-function NoMatch() {
-    return (
-        <div>页面不存在，你丫输错地址了吧！</div>
-    );
-}
 
-function Statistics() {
-    return (
-        <Layout>
-            <h2>统计</h2>
-        </Layout>
-    );
-}
 
-function Tags() {
-    return (
-        <Layout>
-            <h2>标签</h2>
-        </Layout>
-    );
-}
 
-function Money() {
-    return (
-        <Layout>
-            <h2>记账</h2>
-        </Layout>
-    );
-}
+
+
+
 
 export default App;
