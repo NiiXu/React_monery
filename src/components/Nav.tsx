@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import React from 'react';
+import money from 'icons/money.svg'
 
 const NavWrapper = styled.nav`
   line-height: 24px;
